@@ -1,4 +1,7 @@
-# NixOS Dotfiles
+# Noctalia Shell
+### NixOS + Niri Dotfiles
+
+> *A modern, minimal NixOS desktop powered by Niri, built for reproducibility, customization, and everyday development.*
 
 > **⚠️ Warning**
 >
@@ -6,7 +9,9 @@
 
 ## About
 
-This repository contains my personal NixOS configuration, including:
+**Noctalia Shell** is my personal NixOS desktop configuration built around the **Niri** scrollable tiling Wayland compositor.
+
+This repository contains everything needed to recreate my setup, including:
 
 - NixOS system configuration
 - Home Manager configuration
@@ -17,7 +22,9 @@ This repository contains my personal NixOS configuration, including:
 - Desktop environment tweaks
 - Gaming and performance optimizations
 
-Feel free to use this repository as a reference or starting point for your own setup.
+This is an **active work-in-progress repository**. I update it regularly as I improve my NixOS configuration, experiment with new features, or refactor existing modules. Expect frequent changes, improvements, and occasional breaking changes.
+
+Feel free to use this repository as inspiration or as a starting point for your own setup.
 
 ## Hardware
 
@@ -33,20 +40,29 @@ Some modules are hardware-specific and may not work correctly on other systems.
 
 If your system has a similar hybrid graphics setup (AMD iGPU + NVIDIA dGPU), you may find the configuration in:
 
-```
+```text
 modules/graphics.nix
 ```
 
 useful. It contains tweaks for NVIDIA PRIME offloading and gaming performance.
 
-Use it by opening a terminal and typing:
-```
-nvidia-offload app_name
+Launch applications on the dedicated NVIDIA GPU using:
+
+```bash
+nvidia-offload <application>
 ```
 
-ex. nvidia-offload prismlauncher
+Example:
 
-Verify with nvidia-smi that the chosen app is running with your dGPU.
+```bash
+nvidia-offload prismlauncher
+```
+
+You can verify that the application is running on the dedicated GPU with:
+
+```bash
+nvidia-smi
+```
 
 If your hardware differs, you may need to modify or remove this module.
 
@@ -54,4 +70,30 @@ If your hardware differs, you may need to modify or remove this module.
 
 This repository is intended for learning and personal use. I cannot guarantee that these configurations will work on your hardware without modifications.
 
-Always read the configuration before applying it.
+Always review the configuration before applying it to your system.
+
+## Screenshots
+
+(WILL BE ADDED SOON)
+
+## Features
+
+- Niri
+- Noctalia Shell
+- Alacritty
+- Fish/Zsh
+- Fastfetch
+- NVIDIA PRIME
+- Gaming optimizations
+
+## Some Applications
+- Unity Hub 
+- Prism Launcher
+- Steam
+- Obsidian
+- Firefox
+
+
+### Credits
+
+Thanks to the NixOS community and everyone who shares their configurations online.
