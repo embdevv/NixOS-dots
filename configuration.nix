@@ -9,6 +9,9 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./modules/shell.nix
+      ./modules/audio.nix
+      ./modules/graphics.nix
+      ./modules/rog.nix
     ];
 
   # Bootloader.
@@ -97,52 +100,9 @@
     packages = with pkgs; [];
   };
   
-  # Graphics
-  hardware.graphics = {
-    enable = true;
-    enable32Bit = true;
-  };
-
-  services.xserver.videoDrivers = [ "amdgpu" "nvidia" ];
-   
-  hardware.nvidia = { 
-   modesetting.enable = true;
-   powerManagement.enable = false;
-   powerManagement.finegrained = false;
-
-   open = true;
-   nvidiaSettings = true;
-
-   prime = {
-    offload = {
-       enable = true;
-       enableOffloadCmd = true;
-      };
-
-   amdgpuBusId = "PCI:6:0:0";
-   nvidiaBusId = "PCI:1:0:0";
-  };
-};
   security.rtkit.enable = true;
   services.xserver.enable = false;
   programs.xwayland.enable = true;
-
-  # Audio 
-  services.pulseaudio.enable = false;
-
-  services.pipewire = {
-   enable = true;
-   alsa.enable = true;
-   alsa.support32Bit = true;
-   pulse.enable = true;
-   
-   wireplumber.enable = true;
-  };
-
-  # ASUS ROG Laptop
-  services.asusd.enable = true;
-  services.supergfxd.enable = true;
-  programs.rog-control-center.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
