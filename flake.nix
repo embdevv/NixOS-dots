@@ -11,7 +11,7 @@
 
     # Noctalia Shell
     noctalia = {
-      url = "github:noctalia-dev/noctalia";
+      url = "github:noctalia-dev/noctalia/v5.0.0-beta2";
       # Left out on purpose so the Cachix binary cache works.
     };
 
