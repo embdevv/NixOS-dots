@@ -95,10 +95,6 @@ This repository is intended for learning and personal use. I cannot guarantee th
 
 Always review the configuration before applying it to your system.
 
-## Screenshots
-
-(WILL BE ADDED SOON)
-
 ## Features
 
 - Niri
@@ -122,6 +118,14 @@ Always review the configuration before applying it to your system.
 ### Q: So, how do you install packages?
 
 Good thing you asked! It's just as simple as you think. Open `nixos-config/modules/packages.nix` with a code editor. From there, list the package you want to install. You can check the package name [here](https://search.nixos.org/packages) before installation.
+
+
+https://github.com/user-attachments/assets/42e607cb-b59f-47a9-b7b4-6e1cba8ec5c3
+
+## Roadmap
+- Update README with screenshots and features
+- Have a workflow with nix-shell
+  - Including a custom command that can run any project temporarily, and deletes cache when project is closed to avoid clutter
 
 ### Credits
 
