@@ -124,6 +124,7 @@ Always review the configuration before applying it to your system.
 Good thing you asked! It's just as simple as you think. Open `nixos-config/modules/packages.nix` with a code editor. From there, list the package you want to install. You can check the package name [here](https://search.nixos.org/packages) before installation.
 
 Here's a demo on how to install packages:
+
 https://github.com/user-attachments/assets/42e607cb-b59f-47a9-b7b4-6e1cba8ec5c3
 
 
