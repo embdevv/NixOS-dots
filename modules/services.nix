@@ -12,6 +12,8 @@
    };
   systemd.user.services.niri.enableDefaultPath = false;
 
+   # Flatpak
+   services.flatpak.enable = true;
   
   security.rtkit.enable = true;
   services.xserver.enable = false;

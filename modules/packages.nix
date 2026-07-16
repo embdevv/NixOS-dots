@@ -35,6 +35,7 @@
     prismlauncher
     github-desktop
     obsidian
+    unityhub
  
     # Audio Controller
     pulsemixer
