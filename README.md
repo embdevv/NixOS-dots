@@ -1,4 +1,5 @@
 # Noctalia Shell
+
 ### NixOS + Niri Dotfiles
 
 > *A modern, minimal NixOS desktop powered by Niri, built for reproducibility, customization, and everyday development.*
@@ -8,8 +9,8 @@
 > I am still learning NixOS, so this configuration may not follow best practices and could contain mistakes. Please review the files carefully before using them, and always back up your existing configuration.
 
 ## Demonstration
-https://github.com/user-attachments/assets/9a69d867-2d5c-45aa-b623-25891d69b8a7
 
+https://github.com/user-attachments/assets/9a69d867-2d5c-45aa-b623-25891d69b8a7
 
 ## About
 
@@ -70,6 +71,24 @@ nvidia-smi
 
 If your hardware differs, you may need to modify or remove this module.
 
+## Aliases / Shortcuts
+
+This config sets up a few Fish shell abbreviations to make rebuilding faster:
+
+| Abbreviation | Expands to |
+|---|---|
+| `rb`  | `sudo nixos-rebuild switch --flake ~/nixos-config#nixos` |
+| `rba` | `sudo nixos-rebuild dry-activate --flake ~/nixos-config#nixos` |
+
+These are defined in [`modules/shell.nix`](modules/shell.nix) under `programs.fish.shellAbbrs`. Add your own by extending that block.
+
+This config also installs a few modern CLI replacements as system packages:
+
+- [`eza`](https://github.com/eza-community/eza) — a modern replacement for `ls`
+- [`bat`](https://github.com/sharkdp/bat) — a `cat` replacement with syntax highlighting
+- [`zoxide`](https://github.com/ajeetdsouza/zoxide) — a smarter `cd` that learns your habits
+- [`fastfetch`](https://github.com/fastfetch-cli/fastfetch) — a fast system info tool
+
 ## Disclaimer
 
 This repository is intended for learning and personal use. I cannot guarantee that these configurations will work on your hardware without modifications.
@@ -91,12 +110,18 @@ Always review the configuration before applying it to your system.
 - Gaming optimizations
 
 ## Some Applications
-- Unity Hub 
+
+- Unity Hub
 - Prism Launcher
 - Steam
 - Obsidian
 - Firefox
 
+## FAQ
+
+### Q: So, how do you install packages?
+
+Good thing you asked! It's just as simple as you think. Open `nixos-config/modules/packages.nix` with a code editor. From there, list the package you want to install. You can check the package name [here](https://search.nixos.org/packages) before installation.
 
 ### Credits
 
