@@ -14,7 +14,7 @@ Feel free to fork this project, contribute, and expand it for your own needs.
 
 https://github.com/user-attachments/assets/9a69d867-2d5c-45aa-b623-25891d69b8a7
 
-Wallpapers from SleepingCatHey's CozyPixels [repository](https://github.com/SleepyCatHey/CozyPixels)
+Wallpapers from SleepyCatHey's CozyPixels [repository](https://github.com/SleepyCatHey/CozyPixels)
 
 ## About
 
@@ -123,8 +123,15 @@ Always review the configuration before applying it to your system.
 
 Good thing you asked! It's just as simple as you think. Open `nixos-config/modules/packages.nix` with a code editor. From there, list the package you want to install. You can check the package name [here](https://search.nixos.org/packages) before installation.
 
-
+Here's a demo on how to install packages:
 https://github.com/user-attachments/assets/42e607cb-b59f-47a9-b7b4-6e1cba8ec5c3
+
+
+### Q: I found a bug, how do I let you know?
+Found a bug or have a suggestion? Open an [issue](https://github.com/embdevv/NixOS-dots/issues).
+
+### Q: Will this work on my current setup?
+Well, technically I would recommend a fresh install of NixOS to ensure a conflict-free system. However, if you do know your way around it, then feel free!
 
 ## Roadmap
 - Update README with screenshots and features
@@ -134,3 +141,6 @@ https://github.com/user-attachments/assets/42e607cb-b59f-47a9-b7b4-6e1cba8ec5c3
 ### Credits
 
 Thanks to the NixOS community and everyone who shares their configurations online.
+
+## License
+This project is licensed under the [MIT License](LICENSE).
