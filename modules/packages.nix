@@ -49,6 +49,7 @@
     obsidian
     unityhub
     obs-studio
+    lutris
  
     # Audio Controller
     pulsemixer
