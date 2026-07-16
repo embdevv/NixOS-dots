@@ -8,9 +8,13 @@
 >
 > I am still learning NixOS, so this configuration may not follow best practices and could contain mistakes. Please review the files carefully before using them, and always back up your existing configuration.
 
+Feel free to fork this project, contribute, and expand it for your own needs. 
+
 ## Demonstration
 
 https://github.com/user-attachments/assets/9a69d867-2d5c-45aa-b623-25891d69b8a7
+
+Wallpapers from SleepingCatHey's CozyPixels [repository](https://github.com/SleepyCatHey/CozyPixels)
 
 ## About
 
