@@ -7,6 +7,10 @@
 >
 > I am still learning NixOS, so this configuration may not follow best practices and could contain mistakes. Please review the files carefully before using them, and always back up your existing configuration.
 
+## Demonstration
+https://github.com/user-attachments/assets/9a69d867-2d5c-45aa-b623-25891d69b8a7
+
+
 ## About
 
 **Noctalia Shell** is my personal NixOS desktop configuration built around the **Niri** scrollable tiling Wayland compositor.
