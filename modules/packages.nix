@@ -10,7 +10,17 @@
      noto-fonts
      font-awesome
      nerd-fonts.symbols-only
-];
+     nerd-fonts.fira-code
+     nerd-fonts.fira-mono
+     nerd-fonts._0xproto
+     nerd-fonts.atkynson-mono
+     nerd-fonts.caskaydia-cove
+     nerd-fonts.caskaydia-mono
+     nerd-fonts.hack
+     nerd-fonts.meslo-lg
+     nerd-fonts.proggy-clean-tt
+     nerd-fonts.space-mono
+  ];
 
   programs.steam.enable = true;
   programs.fish.enable = true;
