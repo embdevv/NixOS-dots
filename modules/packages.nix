@@ -36,6 +36,7 @@
     github-desktop
     obsidian
     unityhub
+    obs-studio
  
     # Audio Controller
     pulsemixer
