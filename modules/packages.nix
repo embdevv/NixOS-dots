@@ -26,7 +26,9 @@
     git
     pciutils
     fuzzel
-    thunar
+    #thunar # Let's say we want to replace thunar with nautilus
+    nautilus
+    mpv
     
     # Desktop Apps
     firefox
